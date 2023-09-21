@@ -1,7 +1,5 @@
-const giftTitle = document.querySelector(".gift__title");
+const giftTitle = document.getElementById("gift__title");
 const flowers = document.querySelector(".yellow__flowers");
-
-const music = document.getElementById("music");
 
 giftTitle.addEventListener("click", () => {
 	giftTitle.style.zIndex = "0";
@@ -14,7 +12,7 @@ giftTitle.addEventListener("click", () => {
 
 		document.body.classList.add("gift__opened");
 		flowers.classList.add("opened");
-	}, 1000);
+	}, 800);
 });
 
 function Hide(element) {

@@ -37,14 +37,6 @@ html {
     --cardColor: #ffc1ff;
   }
   
-  .gift {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    perspective: 62.5rem;
-    z-index: 1;
-  }
   .gift__title {
     position: absolute;    
     top: 50%;
@@ -52,7 +44,7 @@ html {
     transform: translate(-50%, -50%);
     cursor: default;
     z-index: 1;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--bgColor);
     transition: opacity 0.5s;
   }
@@ -66,89 +58,9 @@ html {
     cursor: default;
     z-index: 1;
     font-size: 2rem;
+    font-weight: 600;
     color: var(--titleColor);
     transition: opacity 0.5s;
-  }
-  .card {
-    width: 80%;
-    max-width: 15.625rem;
-    height: 27.5rem;
-    transform: scale(0.4);
-    background-color: var(--cardColor);
-    box-shadow: 5px 5px 2px #cc008175;
-    overflow: hidden;
-    opacity: 0;
-    transition: transform 1s, opacity 0.5s 1s;
-  }
-  .card__cover {
-    transition: opacity 0.5s 0.1s;
-  }
-  .card__cover .text {
-    width: 85%;
-    margin: 0 auto 0.3125rem auto;
-  }
-  .card__cover .text h1 {
-    padding-bottom: 0.25rem;
-    font-size: 1.875rem;
-    text-align: center;
-    color: var(--titleColor);
-    border-bottom: 0.25rem double;
-  }
-  .card__cover .text h2 {
-    margin-top: 0.3125rem;
-    text-align: center;
-    color: var(--titleColor2);
-  }
-  .card__cover .cake__bg {
-    width: 90%;
-    height: 14.0625rem;
-    margin: 0 auto;
-    background: #e44f9c75;
-    border: 0.1875rem dashed #c9338475;
-    border-radius: 50%;
-  }
-  .card__back {
-    height: 100%;
-    position: relative;
-    transform: rotateY(180deg);
-    transition: opacity 0.5s 0.1s;
-  }
-  .card__back .banderines {
-    position: absolute;
-    top: 0;
-    opacity: 0.8;
-    z-index: 10;
-  }
-  .card__back .msg {
-    margin: 0 0.625rem;
-    padding: 0.25rem 0.5rem;
-    text-align: justify;
-    line-height: 1.15625rem;
-    font-size: 1.125rem;
-    color: #5d0233;
-    background-color: var(--textBg);
-    border-radius: 10px;
-    transform: translateY(75px);
-  }
-  .card__back .final__pic {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9;
-  }
-  
-  .card__back .final__pic .heart {
-    position: absolute;
-    left: 50%;
-    bottom: 0.625rem;
-    transform: translateX(-50%);
-    font-size: 1.375rem;
-    text-shadow: 2px 2px 1px rgba(115, 83, 223, 0.5);
-  }
-  
-  :root {
-    --giftSize: 150px;
   }
   
   .hearts__bg {
@@ -164,12 +76,12 @@ html {
 
   .hearts__bg .row__1 i, .hearts__bg .row__3 i {
     margin: 0 1.25rem;
-    font-size: 1.375rem;
+    font-size: 1.575rem;
     animation: heart 1s infinite;
   }
   .hearts__bg .row__1 i:nth-child(2n+2), .hearts__bg .row__3 i:nth-child(2n+2) {
     transform: translate(-10px, 20px);
-    font-size: 1rem;
+    font-size: 1.2rem;
     animation-duration: 0.8s;
   }
   .hearts__bg .row__3 {
@@ -189,11 +101,6 @@ html {
   
   .opened {
     transform: scale(.8);
-  }
-  
-  .turn {
-    transform: scale(1) rotateY(180deg);
-    box-shadow: -5px 5px 2px #cc008175;
   }
   
   .hide {
@@ -230,6 +137,4 @@ html {
       transform: scale(.8);
     }
   }
-  
-  /*# sourceMappingURL=styles.css.map */
   
